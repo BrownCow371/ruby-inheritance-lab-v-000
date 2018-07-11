@@ -1,9 +1,12 @@
 class Student < User
 
-  attr_reader :knowledge
+  attr_accessor :knowledge
 
   def initialize
     @knowledge = []
   end
 
+  def learn(string)
+    self.knowledge<<string
+  end
 end
